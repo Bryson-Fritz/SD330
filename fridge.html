@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: black;
+            margin: 0;
+        }
+
+        .fridge-display {
+            width: 400px;
+            height: 120px;
+            background-color: lightgray;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .fridge-header {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .fridge-controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        #power-button {
+            width: 60px;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            background-color: green;
+        }
+
+        #running-clock {
+            font-size: 16px;
+            text-align: center;
+        }
+
+        #temperature {
+            font-size: 16px;
+        }
+
+        .big-divisions-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .big-division {
+            width: 250px;
+            height: 400px;
+            background-color: cyan;
+            padding: 10px;
+            margin: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .image-container {
+            text-align: center;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .toggle-button {
+            cursor: pointer;
+            font-weight: bold;
+            padding: 10px;
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .tv-button {
+            cursor: pointer;
+            font-weight: bold;
+            padding: 10px;
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .browser-division {
+            width: 250px;
+            height: 400px;
+            background-color: cyan;
+            padding: 10px;
+            margin: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .browser-input {
+            text-align: center;
+        }
+
+        #browser-url {
+            width: 80%;
+            padding: 5px;
+            margin: 10px 0;
+            border: 1px solid #333;
+            border-radius: 5px;
+        }
+
+        .browser-content {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #browser-iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="fridge-display">
+        <div class="fridge-header"><strong>Fridge Display</strong></div>
+        <div class="fridge-controls">
+            <div id="power-button" onclick="toggleFridge()">ON</div>
+            <div id="running-clock"></div>
+            <div id="temperature">Temperature 35°F</div>
+        </div>
+    </div>
+
+    <div class="big-divisions-container">
+        <div class="big-division" id="division1">
+            <div class="toggle-button" onclick="toggleImage()">Open/Close</div>
+            <div class="image-container">
+                <img src="https://media.npr.org/assets/img/2012/05/04/samsung-smart-fridge_custom-5f6d2d159e369d4a6dd9f052bc3c6ddbe2fd4b0c-s1100-c50.jpg" alt="Fridge Image">
+            </div>
+        </div>
+        <div class="big-division" id="division2">
+            <div class="tv-button" onclick="toggleTV()">TV On/Off</div>
+            <div class="image-container">
+                <img id="tv-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXcqfUOl9P7oCc5JuUDo7rZczF4J24pWs-Ww&usqp=CAU" alt="TV Image">
+            </div>
+        </div>
+        <div class="big-division browser-division">
+            <div class="browser-input">
+                <input type="text" id="browser-url" placeholder="Enter URL and press Enter">
+            </div>
+            <div class="browser-content">
+                <iframe id="browser-iframe" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLGrR2ebRzhxoJAGsGPAyMLPHs6EleUZHxTw&usqp=CAU"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function updateClock() {
+            const clockElement = document.getElementById('running-clock');
+            const now = new Date();
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            const seconds = String(now.getSeconds()).padStart(2, '0');
+            const currentTime = `${hours}:${minutes}:${seconds}`;
+            clockElement.textContent = currentTime;
+        }
+
+        // Update the clock every second
+        setInterval(updateClock, 1000);
+
+        let fridgeOn = false;
+
+        function toggleFridge() {
+            fridgeOn = !fridgeOn;
+            const powerButton = document.getElementById('power-button');
+            if (fridgeOn) {
+                powerButton.textContent = 'ON';
+                powerButton.style.backgroundColor = 'green';
+            } else {
+                powerButton.textContent = 'OFF';
+                powerButton.style.backgroundColor = 'red';
+            }
+        }
+
+        let image1Open = true;
+        const imageContainer = document.getElementById('division1');
+
+        function toggleImage() {
+            image1Open = !image1Open;
+            const imageElement = imageContainer.querySelector('img');
+            if (image1Open) {
+                imageElement.src = 'https://media.npr.org/assets/img/2012/05/04/samsung-smart-fridge_custom-5f6d2d159e369d4a6dd9f052bc3c6ddbe2fd4b0c-s1100-c50.jpg';
+            } else {
+                imageElement.src = 'https://media.istockphoto.com/id/842160124/photo/refrigerator-with-fruits-and-vegetables.jpg?s=612x612&w=0&k=20&c=j0W4TPOevBpp3mS6_X2FHV1uWVl3fcfdGAt2X3l8XzE=';
+            }
+        }
+
+        let tvOn = false;
+        const tvImage = document.getElementById('tv-image');
+
+        function toggleTV() {
+            tvOn = !tvOn;
+            if (tvOn) {
+                tvImage.src = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9oP4tnech63Ua7M_eYOxUqHougTW4dwT2Iw&usqp=CAU';
+            } else {
+                tvImage.src = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXcqfUOl9P7oCc5JuUDo7rZczF4J24pWs-Ww&usqp=CAU';
+            }
+        }
+    </script>
+
+    <hr style="color: lightgray;">
+    <footer><small style="color: lightgray;">&copy; Bryson Fritz 10/16/2023</small></footer>
+
+</body>
+</html>
