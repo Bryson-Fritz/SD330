@@ -187,7 +187,7 @@
   </div>
 
   <audio id="music" src="RYLAH.mp3" preload="auto"></audio>
-  <audio id="tvMusic" src="WTTJ.mp3" preload="auto"></audio> <!-- New audio element for TV music -->
+  <audio id="tvMusic" src="WTTJ.mp3" preload="auto"></audio> 
 
   <script>
     let militaryTime = true;
@@ -279,15 +279,15 @@
 
     function toggleTVImage() {
       const tvImage = document.getElementById('tvImage');
-      const tvSound = document.getElementById('tvMusic'); // Use the TV music element
+      const tvSound = document.getElementById('tvMusic'); 
 
       if (tvImage.style.display === 'none') {
         tvImage.style.display = 'block';
-        tvSound.play(); // Play the TV music
+        tvSound.play(); 
       } else {
         tvImage.style.display = 'none';
-        tvSound.pause(); // Pause the TV music
-        tvSound.currentTime = 0; // Reset the TV music to the beginning
+        tvSound.pause(); 
+        tvSound.currentTime = 0; 
       }
     }
 
@@ -363,7 +363,7 @@
         musicPlaying = true;
       } else {
         audioElement.pause();
-        audioElement.currentTime = 0; // Reset the audio to the beginning
+        audioElement.currentTime = 0; 
         musicButton.textContent = 'Music';
         musicPlaying = false;
       }
