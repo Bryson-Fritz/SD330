@@ -1,0 +1,215 @@
+{
+	"courseID": {
+		"330L": {
+			"courseName": "System Design"
+		},
+		
+		"307N": {
+			"courseName": "Internetworking"
+		},
+
+		"308N": {
+			"courseName" : "Database Management"
+		},
+
+		"104L": {
+			"courseName": "Macroeconomics"
+		},
+
+		"120L": {
+			"courseName": "Intro to Programming"
+		},
+		
+		"122L": {
+			"coursename": "Media Through Film"
+		},
+
+		"103L": {
+			"courseName" : "Microeconomics"
+		},
+
+		"105N": {
+			"courseName": "MS Excel"
+		}
+	}
+}
+
+{
+	"Professor": {
+		"330L": {
+			"name": "Tokash"
+		},
+		
+		"307N": {
+			"name": "Cannistra"
+		},
+
+		"308N": {
+			"name" : "Reza"
+		},
+
+		"104L": {
+			"name": "Camaj"
+		},
+
+		"120L": {
+			"name": "Martensen"
+		},
+		
+		"122L": {
+			"name": "Cary"
+		},
+
+		"103L": {
+			"name" : "Kosenko"
+		},
+
+		"105N": {
+			"name": "Thambirajah"
+		}
+	}
+}
+
+{
+	"Books": {
+		"330L": {
+			"books": ["Interaction Design", "System Design Principles"]
+		},
+		
+		"307N": {
+			"books": ["Internetworking Principles", "LANs & WANs"]
+		},
+
+		"308N": {
+			"books": ["Database Management Principles", "Creating Databases"]
+		},
+
+		"104L": {
+			"books": ["Intro to Macroeconmics", "Principles of Macroeconomics"]
+		},
+
+		"120L": {
+			"books": ["Intro to Python", "Fundamentals of Programming"]
+		},
+		
+		"122L": {
+			"books": ["Art of Media", "Principles of Media"]
+		},
+
+		"103L": {
+			"books": ["Intro to Microeconomics", "Principles of Microeconomics"]
+		},
+
+		"105N": {
+			"books": ["Intro to MS Excel", "Fundamentals of Excel"]
+		}
+	}
+}
+
+{
+	"Times": {
+		"330L": {
+			"times": "TTH 12:30-13:45"
+		},
+		
+		"307N": {
+			"times": "T F 9:30-10:45"
+		},
+
+		"308N": {
+			"times" : "M W 8:00-9:30"
+		},
+
+		"104L": {
+			"times": "T F 14:00-15:15"
+		},
+
+		"120L": {
+			"times": "T W TH 11:00-12:15"
+		},
+		
+		"122L": {
+			"times": "M T 17:00-18:15"
+		},
+
+		"103L": {
+			"times" : "TH F 8:00-9:30"
+		},
+
+		"105N": {
+			"times": "W 18:30-19:45"
+		}
+	}
+}
+
+{
+	"Location": {
+		"330L": {
+			"room": "Hancock 2017"
+		},
+		
+		"307N": {
+			"room": "Hancock 1021"
+		},
+
+		"308N": {
+			"room" : "Hancock 2020"
+		},
+
+		"104L": {
+			"room": "LT 212"
+		},
+
+		"120L": {
+			"room": "Hancock 004"
+		},
+		
+		"122L": {
+			"room": "Donnelly 201"
+		},
+
+		"103L": {
+			"room" : "LT 017"
+		},
+
+		"105N": {
+			"room": "Library 317"
+		}
+	}
+}
+
+{
+	"Subject": {
+		"330L": {
+			"acr": "CMPT"
+		},
+		
+		"307N": {
+			"acr": "CMPT"
+		},
+
+		"308N": {
+			"acr" : "CMPT"
+		},
+
+		"104L": {
+			"acr": "ECON"
+		},
+
+		"120L": {
+			"acr": "CMPT"
+		},
+		
+		"122L": {
+			"acr": "MDIA"
+		},
+
+		"103L": {
+			"acr" : "ECON"
+		},
+
+		"105N": {
+			"acr": "CMPT"
+		}
+	}
+}
