@@ -73,35 +73,35 @@
 {
 	"Books": {
 		"330L": {
-			"books": ["Interaction Design", "System Design Principles"]
+			"titles": ["Interaction Design", "System Design Principles"]
 		},
 		
 		"307N": {
-			"books": ["Internetworking Principles", "LANs & WANs"]
+			"titles": ["Internetworking Principles", "LANs & WANs"]
 		},
 
 		"308N": {
-			"books": ["Database Management Principles", "Creating Databases"]
+			"titles": ["Database Management Principles", "Creating Databases"]
 		},
 
 		"104L": {
-			"books": ["Intro to Macroeconmics", "Principles of Macroeconomics"]
+			"titles": ["Intro to Macroeconmics", "Principles of Macroeconomics"]
 		},
 
 		"120L": {
-			"books": ["Intro to Python", "Fundamentals of Programming"]
+			"titles": ["Intro to Python", "Fundamentals of Programming"]
 		},
 		
 		"122L": {
-			"books": ["Art of Media", "Principles of Media"]
+			"titles": ["Art of Media", "Principles of Media"]
 		},
 
 		"103L": {
-			"books": ["Intro to Microeconomics", "Principles of Microeconomics"]
+			"titles": ["Intro to Microeconomics", "Principles of Microeconomics"]
 		},
 
 		"105N": {
-			"books": ["Intro to MS Excel", "Fundamentals of Excel"]
+			"titles": ["Intro to MS Excel", "Fundamentals of Excel"]
 		}
 	}
 }
@@ -181,35 +181,35 @@
 {
 	"Subject": {
 		"330L": {
-			"acr": "CMPT"
+			"abr": "CMPT"
 		},
 		
 		"307N": {
-			"acr": "CMPT"
+			"abr": "CMPT"
 		},
 
 		"308N": {
-			"acr" : "CMPT"
+			"abr" : "CMPT"
 		},
 
 		"104L": {
-			"acr": "ECON"
+			"abr": "ECON"
 		},
 
 		"120L": {
-			"acr": "CMPT"
+			"abr": "CMPT"
 		},
 		
 		"122L": {
-			"acr": "MDIA"
+			"abr": "MDIA"
 		},
 
 		"103L": {
-			"acr" : "ECON"
+			"abr" : "ECON"
 		},
 
 		"105N": {
-			"acr": "CMPT"
+			"abr": "CMPT"
 		}
 	}
 }
