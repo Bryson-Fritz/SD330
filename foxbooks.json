@@ -8,7 +8,7 @@
       "professor": "Tokash",
       "building": "Hancock",
       "roomNumber": "2017",
-      "books": {
+      "textbooks": {
         "1": {
           "title": "Interaction Design",
           "isbn": "9874657100981",
