@@ -1,0 +1,72 @@
+/* Red and white gradient look */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #FF0000, #FFFFFF); 
+    color: #333;
+}
+
+header {
+    background-color: #FF0000; 
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+nav {
+    background-color: #FF3333; 
+    padding: 0.5em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin: 0 1em;
+}
+
+main {
+    padding: 2em;
+}
+
+footer {
+    background-color: #FF0000;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    background-color: #eee;
+}
+
+ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+}
+
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/ ";
+}
+
+ul.breadcrumb li a {
+    color: #0275d8;
+    text-decoration: none;
+}
+
+ul.breadcrumb li a:hover {
+    color: #31017e;
+    text-decoration: underline;
+}
