@@ -1,204 +1,204 @@
 {
   "courses": {
     "330": {
-      "courseID": 330,
+      "courseNumber": 330,
       "courseTitle": "System Design",
       "credits": 4,
       "school": "Computer Science & Mathematics",
       "professor": "Tokash",
       "building": "Hancock",
       "roomNumber": "2017",
-      "textbooks": [
-        {
+      "textbooks": {
+        "1": {
           "title": "Interaction Design",
           "isbn": "9874657100981",
           "price": 45.99,
           "numPages": 575,
           "author": "Helen Sharp"
         },
-        {
+        "2": {
           "title": "System Design Principles",
           "isbn": "9008563866571",
           "price": 33.95,
           "numPages": 670,
           "author": "Daniel Barkley"
         }
-      ]
+      }
     },
     "307": {
-      "courseID": 307,
+      "courseNumber": 307,
       "courseTitle": "Internetworking",
       "credits": 4,
       "school": "Computer Science & Mathematics",
       "professor": "Cannistra",
       "building": "Hancock",
       "roomNumber": "1021",
-      "textbooks": [
-        {
+      "textbooks": {
+        "1": {
           "title": "Internetworking Principles",
           "isbn": "9334635269824",
           "price": 79.95,
           "numPages": 800,
           "author": "Michelle Dugal"
         },
-        {
+        "2": {
           "title": "LANs & WANs",
           "isbn": "9805564117829",
           "price": 12.99,
           "numPages": 220,
           "author": "Robert Caruso"
         }
-      ]
+      }
     },
     "308": {
-      "courseID": 308,
+      "courseNumber": 308,
       "courseTitle": "Database Management",
       "credits": 4,
       "school": "Computer Science & Mathematics",
       "professor": "Reza",
       "building": "Hancock",
       "roomNumber": "2020",
-      "textbooks": [
-        {
+      "textbooks": {
+        "1": {
           "title": "Database Management Principles",
           "isbn": "9004556572905",
           "price": 59.00,
           "numPages": 445,
           "author": "Michael Smith"
         },
-        {
+        "2": {
           "title": "Creating Databases",
           "isbn": "9775677372118",
           "price": 62.99,
           "numPages": 550,
           "author": "Jennifer Worster"
         }
-      ]
+      }
     },
     "104": {
-      "courseID": 104,
+      "courseNumber": 104,
       "courseTitle": "Macroeconomics",
       "credits": 3,
       "school": "Management",
       "professor": "Camaj",
       "building": "LT",
       "roomNumber": "212",
-      "textbooks": [
-        {
+      "textbooks": {
+        "1": {
           "title": "Intro to Macroeconomics",
           "isbn": "9000226571215",
           "price": 29.99,
           "numPages": 390,
           "author": "William Ernest"
         },
-        {
+        "2": {
           "title": "Principles of Macroeconomics",
           "isbn": "9953657684194",
           "price": 35.50,
           "numPages": 475,
           "author": "Bailey Russell"
         }
-      ]
+      }
     },
     "120": {
-      "courseID": 120,
+      "courseNumber": 120,
       "courseTitle": "Intro to Programming",
       "credits": 4,
       "school": "Computer Science & Mathematics",
       "professor": "Martensen",
       "building": "Hancock",
       "roomNumber": "004",
-      "textbooks": [
-        {
+      "textbooks": {
+        "1": {
           "title": "Intro to Python",
           "isbn": "9890667523621",
           "price": 40.00,
           "numPages": 900,
           "author": "Emily Durren"
         },
-        {
+        "2": {
           "title": "Fundamentals of Programming",
           "isbn": "9080754679062",
           "price": 55.50,
           "numPages": 670,
           "author": "Mitchell Burke"
         }
-      ]
+      }
     },
     "122": {
-      "courseID": 122,
+      "courseNumber": 122,
       "courseTitle": "Media Through Film",
       "credits": 3,
       "school": "Communication & Arts",
       "professor": "Cary",
       "building": "Donnelly",
       "roomNumber": "201",
-      "textbooks": [
-        {
+      "textbooks": {
+        "1": {
           "title": "Art of Media",
           "isbn": "9871167800955",
           "price": 19.75,
           "numPages": 300,
           "author": "Jeremy Pollard"
         },
-        {
+        "2": {
           "title": "Principles of Media",
           "isbn": "9101337689033",
           "price": 37.95,
           "numPages": 525,
           "author": "Hailey Barnes"
         }
-      ]
+      }
     },
     "103": {
-      "courseID": 103,
+      "courseNumber": 103,
       "courseTitle": "Microeconomics",
       "credits": 3,
       "school": "Management",
       "professor": "Kosenko",
       "building": "LT",
       "roomNumber": "017",
-      "textbooks": [
-        {
+      "textbooks": {
+        "1": {
           "title": "Intro to Microeconomics",
           "isbn": "9550534271181",
           "price": 100.00,
           "numPages": 640,
           "author": "Arthur Ford"
         },
-        {
+        "2": {
           "title": "Principles of Microeconomics",
           "isbn": "9777678090362",
           "price": 23.99,
           "numPages": 90,
           "author": "Garrett Bradley"
         }
-      ]
+      }
     },
     "105": {
-      "courseID": 105,
+      "courseNumber": 105,
       "courseTitle": "MS Excel",
       "credits": 1,
       "school": "Management",
       "professor": "Thambirajah",
       "building": "Library",
       "roomNumber": "317",
-      "textbooks": [
-        {
+      "textbooks": {
+        "1": {
           "title": "Intro to MS Excel",
           "isbn": "9336356090225",
           "price": 9.95,
           "numPages": 50,
           "author": "Sophia Beal"
         },
-        {
+        "2": {
           "title": "Fundamentals of Excel",
           "isbn": "9668900645231",
           "price": 5.99,
           "numPages": 20,
           "author": "Olivia Bakker"
         }
-      ]
+      }
     }
   }
 }
