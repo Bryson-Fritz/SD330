@@ -24,17 +24,16 @@
     <ul class="breadcrumb">
       <li><a href="foxbooks.html">Home</a></li>
     </ul>
-    <h2>Please select one of the following courses</h2>
+    <h2>Please select one of the following courses:</h2>
     <ul id="coursesList"></ul>
     <div id="courseDetails"></div>
   </main>
 
-  <footer><small><hr>(c) Fritz - December 6, 2023</footer></small>
+  <footer><small><hr>&copy; Fritz - December 6, 2023</footer></small>
   
   <script>
     const fetchData = async () => {
       try {
-        // Update the URL to point to your hosted foxbooks.json file
         const response = await fetch('https://bryson-fritz.github.io/SD330//foxbooks.json');
         const data = await response.json();
         const coursesList = document.getElementById('coursesList');
